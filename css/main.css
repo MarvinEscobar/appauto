@@ -1,0 +1,593 @@
+*{
+	outline: none !important;
+}
+
+canvas{
+	outline: none;
+}
+
+
+
+.miauto{
+	min-height: 768px;
+	width: 1024px;
+	display: block;
+	overflow: hidden;
+}
+
+.miauto .step-1, .miauto .step-2{
+	display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.miauto .tema{
+	display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.miauto .step-1 .tema.t0{
+	background: url(../img/fondo/step1/t0.png)no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+.miauto .step-1 .tema.t1{
+	background: url(../img/fondo/step1/t1.png)no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.miauto .step-1 .tema.t2{
+	background: url(../img/fondo/step1/t2.png)no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.miauto .step-1 .tema.t3{
+	background: url(../img/fondo/step1/t3.png)no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.miauto .tema .marca{
+	position: absolute;
+	background: url(../img/modelo.png)no-repeat;
+	height: 90px;
+    width: 360px;
+    background-size: contain;
+    top: 20px;
+    left: 0px;
+    z-index: 1;
+}
+
+.miauto .step-2 .tema .marca{
+	background: url(../img/modelofondo.png)no-repeat;
+	height: 122px;
+    width: 380px;
+    background-size: contain;
+    left: 20px;
+}
+
+.miauto .step-2 .hastagtema{
+	background: url(../img/hechoatumedidafondo.png)no-repeat;
+	background-size: 100% 100%;
+    height: 29px;
+    width: 246px;
+    position: absolute;
+    right: 20px;
+    bottom: 40px
+}
+
+.miauto .tema .logo{
+	position: absolute;
+	background: url(../img/mitsubishi.png)no-repeat;
+	height: 140px;
+    width: 106px;
+    background-size: contain;
+    right: 40px;
+    top: 0px;
+    z-index: 1;
+}
+
+.miauto .tema .temas{
+	position: absolute;
+	width: 100px;
+	left: 20px;
+	bottom: 20px;
+	z-index: 3;
+}
+
+.miauto .tema .temas .item{
+	display: block;
+	height: 190px;
+	width: 190px;
+	cursor: pointer;
+}
+
+.miauto .tema .temas .item:nth-child(1){
+	background: url(../img/fondo/ot1.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .tema .temas .item:nth-child(2){
+	background: url(../img/fondo/ot2.png)no-repeat;
+	background-size: 100% 100%;
+
+}
+
+.miauto .tema .temas .item:nth-child(3){
+	background: url(../img/fondo/ot3.png)no-repeat;
+	background-size: 100% 100%;
+
+}
+
+.miauto .tema .next-step{
+	position: absolute;
+	background: url(../img/hecho.png)no-repeat;
+	cursor: pointer;
+	height: 200px;
+	width: 400px;
+    bottom: 40px;
+    right: 20px;
+    visibility: hidden;
+}
+
+.miauto .step-1 .alerta{
+	position: absolute;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.miauto .step-1 .alerta .p1{
+	background: url(../img/alerta/p1.png)no-repeat;
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    background-size: 100% 100%; 
+    position: absolute;
+    z-index: 3;
+    top: 284px;
+    left: 312px;
+}
+
+
+.miauto .step-2{
+
+}
+
+.miauto .step-2 .tema{
+	
+}
+
+.miauto .step-2 .tema.t1{
+	background: url(../img/fondo/step2/t1.png)no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.miauto .step-2 .tema.t2{
+	background: url(../img/fondo/step2/t2.png)no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.miauto .step-2 .tema.t3{
+	background: url(../img/fondo/step2/t3.png)no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+.miauto .step-2 .accesorios{
+	background: url(../img/accesorios.png)no-repeat;
+	background-size: 100% 164px;
+    position: absolute;
+    bottom: 0px;
+    /*bottom: -108px;*/
+    width: 100%;
+    height: 140px;	
+}
+
+.miauto .step-2 .accesorios .bottom-updowm{
+	display: block;
+	cursor: pointer;
+	height: 46px;
+}
+
+.miauto .step-2 .accesorios .contenido{
+	position: relative;
+	display: block;
+	height: 100%;
+    width: 100%;
+}
+
+
+.miauto .step-2 .accesorios .contenido .slogan{
+	display: inline-block;
+	vertical-align: top;
+    height: 24px;
+    width: 24%; 
+    margin-top: 40px;
+    position: relative;
+}
+
+.miauto .step-2 .accesorios .contenido .slogan .hastag{
+	background: url(../img/hechoatumedida.png)no-repeat;
+	background-size: 100% 100%;
+    height: 20px;
+    width: 210px;
+    position: absolute;
+    right: 20px;
+}
+
+
+
+.miauto .step-2 .accesorios .contenido .categoria{
+	display: inline-block;
+	vertical-align: top;
+	width: 70%;
+    border-right: 1px solid #fff;
+    overflow: hidden;
+    height: 101px;
+    margin-left: 5%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .item{
+	display: none;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .item.on{
+	display: block;
+    height: 80px;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .item.on div{
+	display: inline-block;
+	vertical-align: top;
+	height: 80px;
+    width: 80px;
+    margin-right: 24px;
+    margin-top: 0px;
+    outline: none;
+	cursor: pointer;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .item.colores{
+	display: block;
+	width:860px;
+	height:101px;
+}
+
+
+.miauto .step-2 .accesorios .contenido .categoria .item div:last-child{
+	margin-right: 0px !important;
+}
+
+/* parachoque */
+
+.miauto .step-2 .accesorios .contenido .categoria .parachoque div:nth-child(1){
+	background: url(../img/categoria/parachoque/indice/1.png)no-repeat;
+	background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .parachoque div:nth-child(2){
+	background: url(../img/categoria/parachoque/indice/2.png)no-repeat;
+	background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .parachoque div:nth-child(3){
+	background: url(../img/categoria/parachoque/indice/3.png)no-repeat;
+	background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .parachoque div:nth-child(4){
+	background: url(../img/categoria/parachoque/indice/4.png)no-repeat;
+	background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .parachoque div:nth-child(5){
+	background: url(../img/categoria/parachoque/indice/5.png)no-repeat;
+	background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+/* capo */
+
+.miauto .step-2 .accesorios .contenido .categoria .capo div:nth-child(1){
+	background: url(../img/categoria/capo/indice/1.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .capo div:nth-child(2){
+	background: url(../img/categoria/capo/indice/2.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+/*thule*/
+
+.miauto .step-2 .accesorios .contenido .categoria .thule div:nth-child(1){
+	background: url(../img/categoria/thule/indice/1.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .thule div:nth-child(2){
+	background: url(../img/categoria/thule/indice/2.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .thule div:nth-child(3){
+	background: url(../img/categoria/thule/indice/3.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .thule div:nth-child(4){
+	background: url(../img/categoria/thule/indice/4.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .thule div:nth-child(5){
+	background: url(../img/categoria/thule/indice/5.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .thule div:nth-child(6){
+	background: url(../img/categoria/thule/indice/6.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .thule div:nth-child(7){
+	background: url(../img/categoria/thule/indice/7.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .thule div:nth-child(8){
+	background: url(../img/categoria/thule/indice/8.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .thule div:nth-child(9){
+	background: url(../img/categoria/thule/indice/9.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/* cama */
+
+.miauto .step-2 .accesorios .contenido .categoria .cama div:nth-child(1){
+	background: url(../img/categoria/cama/indice/1.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .cama div:nth-child(2){
+	background: url(../img/categoria/cama/indice/2.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+/* estribos */
+.miauto .step-2 .accesorios .contenido .categoria .estribo div:nth-child(1){
+	background: url(../img/categoria/estribo/indice/1.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .estribo div:nth-child(2){
+	background: url(../img/categoria/estribo/indice/2.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .estribo div:nth-child(3){
+	background: url(../img/categoria/estribo/indice/3.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .estribo div:nth-child(4){
+	background: url(../img/categoria/estribo/indice/4.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .estribo div:nth-child(5){
+	background: url(../img/categoria/estribo/indice/5.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/* llantas */
+
+.miauto .step-2 .accesorios .contenido .categoria .llantas div:nth-child(1){
+	background: url(../img/categoria/llantas/indice/1.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .llantas div:nth-child(2){
+	background: url(../img/categoria/llantas/indice/2.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .llantas div:nth-child(3){
+	background: url(../img/categoria/llantas/indice/3.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .llantas div:nth-child(4){
+	background: url(../img/categoria/llantas/indice/4.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .llantas div:nth-child(5){
+	background: url(../img/categoria/llantas/indice/5.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+
+
+/* colores */
+.miauto .step-2 .accesorios .contenido .categoria .colores div:nth-child(1){
+	background: url(../img/categoria/color/1.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .colores div:nth-child(2){
+	background: url(../img/categoria/color/2.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .colores div:nth-child(3){
+	background: url(../img/categoria/color/3.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .colores div:nth-child(4){
+	background: url(../img/categoria/color/4.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .colores div:nth-child(5){
+	background: url(../img/categoria/color/5.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.miauto .step-2 .accesorios .contenido .categoria .colores div:nth-child(6){
+	background: url(../img/categoria/color/6.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+
+.miauto .step-2 #base{
+	padding-top: 200px;
+	margin: auto;
+    display: block;
+}
+
+.miauto .step-2 .auto{
+	display: block;
+	height: 648px;
+	width: 900px;
+	margin: auto;
+	position: relative;
+}
+
+.miauto .step-2 .auto .option{
+	display: block;
+	height: 50px;
+	width: 50px;
+	background: url(../img/check.png)no-repeat;
+	background-position: 50% 50%;
+	position: absolute;
+	cursor: pointer;
+}
+
+.miauto .step-2 .auto .option.opacc1{
+	bottom: 210px;
+    left: -30px;
+}
+
+.miauto .step-2 .auto .option.opacc2{
+	bottom: 360px;
+    left: 170px;
+}
+
+.miauto .step-2 .auto .option.opacc3{
+	bottom: 450px;
+    left: 430px;
+}
+
+.miauto .step-2 .auto .option.opacc4{
+	bottom: 360px;
+    right: 90px;
+}
+
+.miauto .step-2 .auto .option.opacc5{
+	bottom: 100px;
+    left: 430px;
+}
+
+.miauto .step-2 .auto .option.opacc6{
+	bottom: 100px;
+    right: 90px;
+}
+
+.miauto .step-2 .auto .option.opacc7{
+	bottom: 260px;
+    left: 430px;
+}
+
+.miauto .step-2 .auto .option.on{
+	background: url(../img/check-on.png)no-repeat;
+	background-position: 50% 50%;
+}
+
+.miauto .step-2 .alerta{
+	position: absolute;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.miauto .step-2 .alerta .p2{
+	background: url(../img/alerta/p2.png)no-repeat;
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    background-size: 100% 100%; 
+    position: absolute;
+    z-index: 3;
+    top: 284px;
+    left: 312px;
+}
+
+
+.miauto .step-2 .loading{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.95);
+	top:0px;
+	left: 0px;
+	z-index: 9;
+	display: none;
+}
+
+.miauto .step-2 .loading .logo{
+	background: url(../img/triangulo.png)no-repeat;
+    height: 225px;
+    width: 242px;
+    margin: auto;
+    margin-top: 264px;
+}
+
+
+.miauto .step-2 .camara{
+	position: absolute;
+	right: 30px;
+	top:20px;
+}
+
+.miauto .step-2 .camara .foto{
+	display: block;
+	background: url(../img/camara.png)no-repeat;
+	height: 69px;
+    width: 69px;
+    margin: 0px 0px 10px 0px;
+    cursor: pointer;
+}
+
+.miauto .step-2 .camara .compartir{
+	display: block;
+	background: url(../img/compartir.png)no-repeat;
+	height: 69px;
+    width: 69px;
+    cursor: pointer;
+}
